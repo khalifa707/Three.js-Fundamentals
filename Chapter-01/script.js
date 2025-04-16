@@ -11,6 +11,15 @@ const mesh = new THREE.Mesh(geometry, material);
 mesh.position.set(0.7, -0.6, 1);
 scene.add(mesh);
 
+//Scale
+mesh.scale.x = 2;
+mesh.scale.y = 0.5;
+mesh.scale.z = 2;
+
+//Rotation
+mesh.rotation.reorder('YXZ');
+mesh.rotation.y = Math.PI;
+
 //Axes Helper
 const axesHelper = new THREE.AxesHelper(3);
 scene.add(axesHelper);
